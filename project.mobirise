@@ -46,7 +46,7 @@
       }
     ],
     "imageResize": true,
-    "uniqCompNum": 8,
+    "uniqCompNum": 9,
     "versionPublish": "5.5.0"
   },
   "pages": {
@@ -930,6 +930,21 @@
           "_global": true,
           "_once": "footers",
           "_params": {}
+        },
+        {
+          "_customTemplate": true,
+          "_afterNavbarItem": false,
+          "_customHTML": "<!-- Type valid HTML here -->\n\n<div>\n    .\n    .\n    .\n    .\n    \n    .\n    .\n    .\n    .\n    \n</div>",
+          "_customCSS": "/* Type valid CSS here */\n\ndiv {\n  padding: 80px 0;\n  color: #777;\n  text-align: center;\n}\np {\n  font-size: 60px;\n  color: #777;\n}",
+          "alias": "code-editor",
+          "_tags": [
+            "Extension"
+          ],
+          "_name": "pro.custom-html",
+          "_sourceTheme": "creatorm5",
+          "_anchor": "custom-html-8",
+          "_PHPplaceholders": [],
+          "_JSplaceholders": []
         }
       ]
     }
