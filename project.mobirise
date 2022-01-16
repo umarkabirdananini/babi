@@ -6,7 +6,7 @@
       "title": "CreatorM5",
       "styling": {
         "primaryColor": "#FEDB01",
-        "secondaryColor": "#8C8C95",
+        "secondaryColor": "#ffffff",
         "successColor": "#eff0f6",
         "infoColor": "#3f69ff;",
         "warningColor": "#FF9417",
@@ -46,7 +46,7 @@
       }
     ],
     "imageResize": true,
-    "uniqCompNum": 9,
+    "uniqCompNum": 14,
     "versionPublish": "5.5.0",
     "screenshot": "screenshot.png"
   },
@@ -54,11 +54,12 @@
     "index.html": {
       "settings": {
         "main": true,
-        "title": "Home",
-        "meta_descr": "",
+        "title": "Jikan Babi Production",
+        "meta_descr": "We helped defined the target audience and the sales strategy across Northern States of Nigeria through Electronic Media.",
         "header_custom": "",
         "footer_custom": "",
-        "html_before": ""
+        "html_before": "",
+        "meta_image": "@PROJECT_PATH@/assets/images/babi-96x64.png"
       },
       "components": [
         {
@@ -764,6 +765,248 @@
         {
           "alias": false,
           "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".card-title": {
+              "padding-bottom": "18px",
+              "margin": "0",
+              "color": "#14142b"
+            },
+            ".align-left": {
+              "max-width": "547px"
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#8c8c95",
+              "text-align": "left"
+            },
+            ".left-side": {
+              "margin-right": "20px"
+            },
+            ".right-side": {
+              "margin-left": "20px"
+            },
+            "@media (max-width: 768px)": {
+              ".left-side": {
+                "margin-right": "0px"
+              },
+              ".right-side": {
+                "padding-top": "20px",
+                "margin-left": "0px"
+              }
+            }
+          },
+          "_name": "article3",
+          "_sourceTheme": "creatorm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"article3\" group=\"Article\" plugins=\"mobirise-icons2\">\n\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"5\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"5\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-between\">\n            <div class=\"col-12 col-md-6\">\n                <div class=\"card-wrapper\">\n                    <div class=\"align-left left-side\">\n                        <h4 class=\"card-title mbr-fonts-style align-left\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".card-title\"><b>History</b></h4>\n                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".mbr-text, .mbr-section-btn\">Established in 2007, Jikan Babi Production is essentially a broadcasting and media production company. The company was founded by a seasoned and well-accomplished journalist; Alhaji Nasir Abbas Babi. It was initially recognized through electronic media across the northern states of Nigeria and later boomerang to become a standard company with national and international recognition. From this position, we were prompt in handling efficient media production services and digital broadcasting for both local, national and international clients.&nbsp;</p>\n                    </div>\n                </div>\n            </div>\n            <div class=\"col-12 col-md-6\">\n                <div class=\"align-left right-side\">\n                    <h4 class=\"card-title mbr-fonts-style align-left\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".card-title\"><b>Experience</b></h4>\n                    <p class=\"mbr-text mbr-fonts-style button-top\" mbr-theme-style=\"display-4\" data-app-selector=\".mbr-text, .mbr-section-btn\">Jikan Babi Production is proud to have been rendering effective digital broadcasting and media production services to an array of our clients at affordable prices. We have successfully established a friendly niche in the company where our clients get the best of our services. For more than 10 years, Jikan Babi Production has been relating with individuals and organizations in Nigeria and abroad to produce audio and video jingles for ceremonies, sensitization, awareness, mobilization, education and entertainment. We have also committed ourselves to the production of audios and videos to help our clients connect with their customers and promote their businesses.\n<br>Similarly, Jikan Babi Production helps in digitizing your online presence by making deliberate efforts to trigger your online presence targeting your specific customers. We create digital broadcast content for various media organizations.</p>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "sUGMSIO8Hs",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "article3-9"
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".row": {
+              "align-items": "center",
+              "justify-content": "space-between"
+            },
+            ".mbr-section-title": {
+              "width": "100%",
+              "text-align": "left",
+              "margin-bottom": "24px",
+              "color": "#14142b"
+            },
+            ".mbr-text": {
+              "color": "#8c8c95",
+              "margin-bottom": "32px"
+            },
+            ".mbr-section-btn": {
+              "width": "auto",
+              "display": "block"
+            },
+            "ul": {
+              "padding-inline-start": "20px",
+              "margin-bottom": "28px"
+            },
+            "li::marker": {
+              "color": "@markerColor",
+              "width": "10px"
+            },
+            "li": {
+              "margin-bottom": "7px",
+              "color": "#14142b"
+            },
+            "img": {
+              "width": "90%"
+            },
+            ".gray": {
+              "background-color": "@accentColor",
+              "width": "80%",
+              "height": "430px",
+              "margin": "auto",
+              "position": "relative"
+            },
+            ".b": {
+              "max-width": "598px"
+            },
+            ".first": {
+              "position": "absolute",
+              "top": "-10%",
+              "right": "25%"
+            },
+            ".second": {
+              "position": "absolute",
+              "bottom": "-10%",
+              "left": "25%"
+            },
+            "@media (max-width: 992px)": {
+              ".t": {
+                "padding-top": "90px"
+              },
+              ".b": {
+                "max-width": "initial"
+              },
+              ".gray": {
+                "width": "50%"
+              }
+            },
+            "@media (max-width: 750px)": {
+              ".gray": {
+                "height": "330px"
+              }
+            },
+            "@media (max-width: 630px)": {
+              ".gray": {
+                "height": "230px"
+              }
+            },
+            "@media (max-width: 450px)": {
+              ".gray": {
+                "height": "200px",
+                "width": "70%"
+              }
+            },
+            ".btn": {
+              "margin-top": "20px"
+            },
+            "& when (@reverseContent)": {
+              ".row": {
+                "flex-direction": "row-reverse"
+              }
+            },
+            ".t": {
+              "max-width": "542px"
+            }
+          },
+          "_name": "header2",
+          "_sourceTheme": "creatorm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"header2\" group=\"Headers\" mbr-class=\"{'mbr-fullscreen': fullScreen}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"checkbox\" name=\"fullWidth\" title=\"Full Width\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <input type=\"checkbox\" title=\"Reverse\" name=\"reverseContent\" checked>\n        <header>Slide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"List\" name=\"showList\">\n        <input type=\"checkbox\" title=\"Button\" name=\"showButton\" checked>\n        <input type=\"color\" title=\"Marker Color\" name=\"markerColor\" value=\"#fedb01\">\n        <input type=\"color\" title=\"Accent\" name=\"accentColor\" value=\"#eff0f6\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n            <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#000000\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-between\">\n            <div class=\"col-12 col-lg-6 b\">\n                <div class=\"gray\">\n                    <img src=\"@PROJECT_PATH@/assets/images/undraw-task-re-wi3v.svg\" alt=\"Mobirise\" class=\"align first\">\n                    <img src=\"@PROJECT_PATH@/assets/images/undraw-chore-list-re-2lq8.svg\" alt=\"Mobirise\" class=\"align second\">\n                </div>\n            </div>\n            <div class=\"col-12 col-lg-6 t\">\n                <div class=\"right-side\">\n                    <h5 class=\"mbr-section-title mbr-fonts-style\" mbr-theme-style=\"display-2\" data-app-selector=\".mbr-section-title\" mbr-if=\"showTitle\"><b>Vision &amp; Mission</b></h5>\n                    <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".mbr-text, .button-align, .list\" mbr-if=\"showText\">\n                        With more than 30 experts as the production crew as of December 2021, we have made ebullient productions for more than 10,00 clients, including media organizations, public-sector organizations, private companies and appreciably more individuals in Sokoto and across the northern states in Nigeria. The company’s experienced production crew have expertise in mass communication, languages, translations, media production, journalism and of course in Information and Communication Technology. This has enabled us to deliver the best media production and digital broadcasting services in Nigeria. We aim to keep up with Nigeria’s evolving digital economy industry. The vision of the Jikan Babi Production is to serve our clients producing the desired results, thereby rendering them high-quality services that surpass their expectations, and thus help in building an egalitarian society for our clients and the general public.\n                    </p>\n                    <ul class=\"list mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".list\" data-multiline mbr-article mbr-if=\"showList\">\n                        <li><b>Created for young entrepreneurs</b></li>\n                        <li><b>New videos every week</b></li>\n                        <li><b>Interviews with famous guests</b></li>\n                    </ul>\n                    <div class=\"button-align\">\n                        \n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "sUGNWAGSqU",
+          "_anchor": "header2-a",
+          "_PHPplaceholders": [],
+          "_JSplaceholders": [],
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-section-subtitle": {
+              "color": "#8c8c95",
+              "text-align": "left",
+              "max-width": "552px",
+              "margin": "auto"
+            },
+            ".mbr-section-title": {
+              "text-align": "center",
+              "color": "#14142b",
+              "padding-bottom": "24px",
+              "max-width": "752px",
+              "margin": "auto"
+            },
+            ".row": {
+              "align-items": "center",
+              "height": "100%"
+            },
+            ".wrapper": {
+              "margin": "auto"
+            },
+            ".subtitle": {
+              "display": "inline",
+              "width": "auto",
+              "color": "#8c8c95"
+            },
+            ".mbr-section-btn": {
+              "display": "inline",
+              "width": "auto",
+              "margin-right": "25px"
+            },
+            ".title-block": {
+              "display": "flex",
+              "align-items": "center",
+              "justify-content": "center",
+              "padding-bottom": "24px"
+            },
+            "a.btn": {
+              "padding": "16px 25px !important"
+            },
+            "a.btn:hover": {
+              "background-color": "@primaryColor !important",
+              "border-color": "@primaryColor !important",
+              "color": "#000000"
+            },
+            "@media (max-width: 340px)": {
+              ".title-block": {
+                "display": "flex",
+                "flex-direction": "column"
+              },
+              ".mbr-section-btn": {
+                "margin-right": "0",
+                "margin-bottom": "20px"
+              }
+            }
+          },
+          "_name": "features11",
+          "_sourceTheme": "creatorm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"features11\" group=\"Features\" mbr-class=\"{'mbr-fullscreen': fullScreen}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n        <input type=\"range\" inline title=\"Width\" name=\"contentWidth\" min=\"5\" max=\"12\" value=\"7\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Button\" name=\"showButton\">\n        <input type=\"checkbox\" title=\"Date\" name=\"showDate\">\n        <input type=\"checkbox\" title=\"Title\" name=\"showSubtitle\" checked>\n        <input type=\"checkbox\" title=\"Text\" name=\"showTitle\" checked>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.2\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row\">\n            <div class=\"col title-block\">\n                <div class=\"mbr-section-btn\" mbr-if=\"showButton\" data-toolbar=\"-mbrBtnAdd, -mbrBtnMove\" mbr-buttons mbr-theme-style=\"display-4\"><a class=\"btn btn-success\" href data-app-placeholder=\"Type Text\">Productivity</a></div>\n                <h4 class=\"subtitle mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".subtitle\" mbr-if=\"showDate\">April 28,\n                    2021</h4>\n            </div>\n            <div class=\"row\">\n                <div class=\"wrapper col-12 col-md-{{contentWidth}}\">\n                    <h3 class=\"mbr-section-title mbr-fonts-style\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-2\" mbr-if=\"showSubtitle\"><b>Commitment to Clients</b></h3>\n                    <h3 class=\"mbr-section-subtitle mbr-fonts-style\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-4\" mbr-if=\"showTitle\">Jikan Babi Production is committed to the satisfaction of its clients. We comply with clients specifications and render the best service. We seek for clients feedback to improve on our general services. We also update our clients of all improvements and enhancements to our services to ensure that no compromise is made against our mission.</h3>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "sUGUniHThG",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "features11-c"
+        },
+        {
+          "alias": false,
+          "_styles": {
             "padding-top": "(@paddingTop * 15px)",
             "padding-bottom": "(@paddingBottom * 15px)",
             "& when (@bg-type = \"color\")": {
@@ -888,9 +1131,113 @@
           },
           "_name": "features6",
           "_sourceTheme": "creatorm5",
-          "_customHTML": "<section data-bs-version=\"5.1\" class=\"features6\" group=\"Features\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\" plugins=\"BootstrapCarouselSwipe,mbr-clients-slider,font-awesome\" data-interval=\"false\" data-bs-interval=\"false\">\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <header>Size</header>\n        <input type=\"checkbox\" name=\"fullWidth\" title=\"Full Width\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"5\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"5\">\n        <header>Items</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n        <input type=\"checkbox\" title=\"Button\" name=\"showButton\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row title-block justify-content-between\" mbr-if=\"showTitle || showSubtitle\">\n            <div class=\"col\" mbr-if=\"showTitle\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style\" mbr-theme-style=\"display-2\" data-app-selector=\".mbr-section-subtitle\" mbr-if=\"showSubtitle\">\n                    <b>Productions</b></h4>\n            </div>\n            <div class=\"col-auto\" mbr-if=\"showSubtitle\">\n                <h3 class=\"mbr-section-title mbr-fonts-style\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-4\">Since 2007</h3>\n            </div>\n        </div>\n        <div class=\"row\">\n            <div class=\"col-12 col-sm-6 col-lg-4 item features-image\">\n                <div class=\"shadow item-wrapper\">\n                    <div class=\"wrap-img item-img\">\n                        <img src=\"../_images/partners/partn1.svg\" class=\"inner\">\n                    </div>\n                    <div class=\"card-wrapper\">\n                        <h5 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".card-title\">\n                            <b><a href=\"https://youtube.com/channel/UCkIBtQrxddEOtaGkwOYyqbg\" class=\"text-primary\">YouTube</a></b></h5>\n                        <h5 class=\"card-text mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".card-text\">.</h5>\n                    </div>\n                </div>\n            </div>\n            \n            \n            <div class=\"col-12 col-sm-6 col-lg-4 item features-image\">\n                <div class=\"shadow item-wrapper\">\n                    <div class=\"wrap-img item-img\">\n                        <img src=\"@PROJECT_PATH@/assets/images/partn4.svg\" class=\"inner\" alt>\n                    </div>\n                    <div class=\"card-wrapper\">\n                        <h5 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".card-title\">\n                            <b><a href=\"https://facebook.com/jikanbabiproduction\" class=\"text-primary\">Facebook</a></b></h5>\n                        <h5 class=\"card-text mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".card-text\">.</h5>\n                    </div>\n                </div>\n            </div>\n            <div class=\"col-12 col-sm-6 col-lg-4 item features-image\">\n                <div class=\"shadow item-wrapper\">\n                    <div class=\"wrap-img item-img\">\n                        <img src=\"../_images/partners/logo5.jpg\" class=\"inner\">\n                    </div>\n                    <div class=\"card-wrapper\">\n                        <h5 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".card-title\">\n                            <b><a href=\"http://tiktok.com/jikanbabi\" class=\"text-primary\">Tik Tok</a></b></h5>\n                        <h5 class=\"card-text mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".card-text\">.</h5>\n                    </div>\n                </div>\n            </div>\n            \n        </div>\n        <div class=\"button-align\" mbr-if=\"showButton\">\n            <div class=\"mbr-section-btn margin\" data-toolbar=\"-mbrBtnAdd, -mbrBtnMove\" mbr-buttons mbr-theme-style=\"display-4\"><a class=\"btn btn-primary\" href data-app-placeholder=\"Type Text\">Become\n                        Sponsor</a></div>\n        </div>\n    </div>\n</section>",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"features6\" group=\"Features\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\" plugins=\"BootstrapCarouselSwipe,mbr-clients-slider,font-awesome\" data-interval=\"false\" data-bs-interval=\"false\">\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <header>Size</header>\n        <input type=\"checkbox\" name=\"fullWidth\" title=\"Full Width\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"5\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"5\">\n        <header>Items</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n        <input type=\"checkbox\" title=\"Button\" name=\"showButton\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row title-block justify-content-between\" mbr-if=\"showTitle || showSubtitle\">\n            <div class=\"col\" mbr-if=\"showTitle\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style\" mbr-theme-style=\"display-2\" data-app-selector=\".mbr-section-subtitle\" mbr-if=\"showSubtitle\">\n                    <b>Productions</b></h4>\n            </div>\n            <div class=\"col-auto\" mbr-if=\"showSubtitle\">\n                <h3 class=\"mbr-section-title mbr-fonts-style\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-4\">Since 2007</h3>\n            </div>\n        </div>\n        <div class=\"row\">\n            <div class=\"col-12 col-sm-6 col-lg-4 item features-image\">\n                <div class=\"shadow item-wrapper\">\n                    <div class=\"wrap-img item-img\">\n                        <img src=\"../_images/partners/partn1.svg\" class=\"inner\">\n                    </div>\n                    <div class=\"card-wrapper\">\n                        <h5 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".card-title\">\n                            <b><a href=\"https://youtube.com/channel/UCkIBtQrxddEOtaGkwOYyqbg\" class=\"text-primary\">YouTube</a></b></h5>\n                        <h5 class=\"card-text mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".card-text\">.</h5>\n                    </div>\n                </div>\n            </div>\n            \n            \n            <div class=\"col-12 col-sm-6 col-lg-4 item features-image\">\n                <div class=\"shadow item-wrapper\">\n                    <div class=\"wrap-img item-img\">\n                        <img src=\"@PROJECT_PATH@/assets/images/partn4.svg\" class=\"inner\" alt>\n                    </div>\n                    <div class=\"card-wrapper\">\n                        <h5 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".card-title\">\n                            <b><a href=\"https://facebook.com/jikanbabiproduction\" class=\"text-primary\">Facebook</a></b></h5>\n                        <h5 class=\"card-text mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".card-text\">.</h5>\n                    </div>\n                </div>\n            </div>\n            <div class=\"col-12 col-sm-6 col-lg-4 item features-image\">\n                <div class=\"shadow item-wrapper\">\n                    <div class=\"wrap-img item-img\">\n                        <img src=\"../_images/partners/logo5.jpg\" class=\"inner\">\n                    </div>\n                    <div class=\"card-wrapper\">\n                        <h5 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".card-title\">\n                            <b><a href=\"https://www.tiktok.com/@jikanbabi\" class=\"text-primary\">Tik Tok</a></b></h5>\n                        <h5 class=\"card-text mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".card-text\">.</h5>\n                    </div>\n                </div>\n            </div>\n            \n        </div>\n        <div class=\"button-align\" mbr-if=\"showButton\">\n            <div class=\"mbr-section-btn margin\" data-toolbar=\"-mbrBtnAdd, -mbrBtnMove\" mbr-buttons mbr-theme-style=\"display-4\"><a class=\"btn btn-primary\" href data-app-placeholder=\"Type Text\">Become\n                        Sponsor</a></div>\n        </div>\n    </div>\n</section>",
           "_cid": "sSIh5A0MQh",
           "_anchor": "features6-7",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "_name": "extForm16",
+          "_sourceTheme": "mobirise4-blocks-theme",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"mbr-section extForm\" group=\"Additional Blocks\" data-bg-video=\"{{bg.type == 'video'&&bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" value=\"6\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" value=\"6\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\" checked>\n        <input type=\"checkbox\" title=\"Reverse Content\" name=\"reverseContent\" checked>\n        <input type=\"checkbox\" title=\"Show Line\" name=\"showLine\" checked>\n        <input type=\"map\" title=\"Map\" name=\"googleMap\" place-id=\"Nigeria, Sokoto ,  Magajin Gari B,\nAssada Area\" value=\"Nigeria, Sokoto ,  Magajin Gari B,\nAssada Area\">\n        <input type=\"checkbox\" title=\"Gray Filter\" name=\"gray\" checked>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"@ADDONS_PATH@/mobirise4-blocks-theme/components/_images/background6.jpg\" parallax>\n            <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Background Video\" value=\"https://www.youtube.com/watch?v=l8UXhtqV6hU\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#deeeff\" condition=\"overlay&&bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.9\" condition=\"overlay&&bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay&&bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div class=\"container\">\n        <h2 mbr-if=\"showTitle\" class=\"mbr-section-title pb-3 mbr-fonts-style align-left mbr-bold\" mbr-theme-style=\"display-2\">\n            CONTACT US\n        </h2>\n        <div class=\"row align-items-start\">\n            <div class=\" title col-12 col-lg-7 col-md-12\" mbr-class=\"{'order-2': reverseContent}\">\n                <h3 mbr-if=\"showSubtitle\" class=\"mbr-section-subtitle  mbr-light pb-2 mbr-fonts-style align-left\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-section-subtitle\"><div><span style=\"font-size: 1rem; letter-spacing: 0.03em;\">Head Office</span><br></div><div>Magajin Gari B,\n</div><div>Assada Area, Sokoto,\n</div><div>Sokoto State.</div><div><br></div><div><a href=\"mailto:info@jikanbabi.com\" class=\"text-primary\">info@jikanbabi.com\n</a></div><div><a href=\"tel:0803 318 6727\" class=\"text-primary\">0803 318 6727</a></div><div>\n</div><div>\n</div><div>\n</div></h3>\n                <hr mbr-if=\"showLine\">     \n                \n                <div class=\"google-map\" mbr-map=\"googleMap\"></div>\n            </div>\n            <div mbr-form class=\"media-container-column col-lg-5 ml-auto col-md-12\">\n                <!---Formbuilder Form--->\n                <form action name=\"Mobirise Form\" method=\"POST\" class=\"mbr-form form-with-styler\">\n                    <div class=\"row\">\n                        <div hidden=\"hidden\" data-form-alert class=\"alert alert-success col-12\">Thanks for filling out the form!</div>\n                        <div hidden=\"hidden\" data-form-alert-danger class=\"alert alert-danger col-12\"></div>\n                    </div>\n                    <div class=\"dragArea row\">\n                        <div class=\"col-md-12 form-group mb-3\" data-for=\"name\">\n                            <input type=\"text\" name=\"name\" placeholder=\"You Name\" data-form-field=\"Name\" mbr-theme-style=\"display-7\" required=\"required\" class=\"form-control\">\n                        </div>\n                        <div class=\"col-md-12 form-group mb-3\" data-for=\"email\">\n                            <input type=\"email\" name=\"email\" placeholder=\"You Email\" data-form-field=\"Email\" mbr-theme-style=\"display-7\" required=\"required\" class=\"form-control\">\n                        </div>\n                        <div data-for=\"phone\" class=\"col-md-12 form-group mb-3\" draggable=\"false\">\n                            <input type=\"tel\" name=\"phone\" placeholder=\"You Phone\" data-form-field=\"Phone\" mbr-theme-style=\"display-7\" class=\"form-control\">\n                        </div>\n                        <div data-for=\"message\" class=\"col-md-12 form-group mb-3\" draggable=\"false\">\n                            <textarea type=\"textarea\" name=\"message\" placeholder=\"Message\" data-form-field=\"Message\" mbr-theme-style=\"display-7\" class=\"form-control\"></textarea>\n                        </div>\n                        <div class=\"col-md-12 input-group-btn\" mbr-buttons=\"true\" mbr-theme-style=\"display-4\" data-toolbar=\"-mbrBtnMove,-mbrBtnLink,-mbrBtnAdd\">\n                            <a type=\"submit\" class=\"btn btn-form btn-primary btn-form\">SEND</a>\n                        </div>\n                    </div>\n                </form><!---Formbuilder Form--->\n            </div>\n        </div>\n    </div>      \n</section>",
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "@media (max-width: 991px)": {
+              ".title when not (@reverseContent)": {
+                "margin-bottom": "2rem"
+              },
+              ".title when (@reverseContent)": {
+                "margin-top": "2rem"
+              },
+              ".mbr-section-title": {
+                "text-align": "center"
+              },
+              ".mbr-section-subtitle": {
+                "text-align": "center"
+              },
+              ".input-group-btn": {
+                "text-align": "center"
+              }
+            },
+            ".mbr-section-subtitle": {
+              "color": "#000000"
+            },
+            "a:not([href]):not([tabindex])": {
+              "color": "#fff",
+              "border-radius": "3px"
+            },
+            "a.btn-white:not([href]):not([tabindex])": {
+              "color": "#333"
+            },
+            ".form-group": {
+              "-webkit-flex-grow": "1",
+              "flex-grow": "1",
+              "max-width": "100%"
+            },
+            ".input-group-btn": {
+              "display": "block",
+              "text-align": "left"
+            },
+            "h3": {
+              "color": "#444",
+              "letter-spacing": "0.03em"
+            },
+            ".form-control": {
+              "border-radius": "0px !important",
+              "padding-left": "15px"
+            },
+            ".google-map": {
+              "width": "100%",
+              "height": "25rem",
+              "iframe": {
+                "width": "inherit",
+                "height": "100%"
+              },
+              "& when (@gray)": {
+                "-webkit-filter": "grayscale(100%)",
+                "-moz-filter": "grayscale(100%)",
+                "-ms-filter": "grayscale(100%)",
+                "-o-filter": "grayscale(100%)",
+                "filter": "gray"
+              },
+              "[data-state-details]": {
+                "color": "#444444",
+                "font-family": "Muli",
+                "height": "1.5em",
+                "margin-top": "-0.75em",
+                "padding-left": "1.25rem",
+                "padding-right": "1.25rem",
+                "position": "absolute",
+                "text-align": "center",
+                "top": "50%",
+                "width": "100%"
+              },
+              "&[data-state]": {
+                "background": "#e9e5dc"
+              },
+              "&[data-state=\"loading\"]": {
+                "[data-state-details]": {
+                  "display": "none"
+                },
+                "&::after": {}
+              }
+            },
+            "textarea.form-control": {
+              "min-height": "154px"
+            }
+          },
+          "_cid": "sUGVdXU0Lt",
+          "_anchor": "extForm16-d",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
@@ -928,21 +1275,6 @@
           "_global": true,
           "_once": "footers",
           "_params": {}
-        },
-        {
-          "_customTemplate": true,
-          "_afterNavbarItem": false,
-          "_customHTML": "<!-- Type valid HTML here -->\n\n<div>\n    .\n    .\n    .\n    .\n    \n    .\n    .\n    .\n    .\n    \n</div>",
-          "_customCSS": "/* Type valid CSS here */\n\ndiv {\n  padding: 80px 0;\n  color: #777;\n  text-align: center;\n}\np {\n  font-size: 60px;\n  color: #777;\n}",
-          "alias": "code-editor",
-          "_tags": [
-            "Extension"
-          ],
-          "_name": "pro.custom-html",
-          "_sourceTheme": "creatorm5",
-          "_anchor": "custom-html-8",
-          "_PHPplaceholders": [],
-          "_JSplaceholders": []
         }
       ]
     }
