@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html  >
+<head>
+  <!-- Site made with Mobirise Website Builder v6.0.1, https://mobirise.com -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Mobirise v6.0.1, mobirise.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <link rel="shortcut icon" href="assets/images/heading-600-x-200-px-1.png-368x123.png" type="image/x-icon">
+  <meta name="description" content="">
+  
+  
+  <title>Home</title>
+  <link rel="stylesheet" href="assets/web/assets/mobirise-icons2/mobirise2.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="assets/dropdown/css/style.css">
+  <link rel="stylesheet" href="assets/theme/css/style.css">
+  <link rel="preload" href="https://fonts.googleapis.com/css?family=Inter+Tight:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter+Tight:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap"></noscript>
+  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css?v=RXgpcA"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css?v=RXgpcA" type="text/css">
+
+  
+  
+  
+</head>
+<body>
+  
+  <section data-bs-version="5.1" class="menu menu2 cid-uIQcXZbFEM" once="menu" id="menu02-1">
+	
+
+	<nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
+		<div class="container">
+			<div class="navbar-brand">
+				<span class="navbar-logo">
+					
+						<img src="assets/images/heading-600-x-200-px-1.png-368x123.png" alt="" style="height: 3rem;">
+					
+				</span>
+				
+			</div>
+		<div class="radio-player d-flex align-items-center">
+  
+  <!-- Play/Pause -->
+  <button id="playPauseBtn" title="Play/Pause">
+    <svg id="playIcon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="white" viewBox="0 0 16 16">
+      <path d="M6 4.5v7l6-3.5-6-3.5z"></path>
+    </svg>
+    <svg id="pauseIcon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="white" viewBox="0 0 16 16" style="display: none;">
+      <path d="M5.5 3.5a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0v-8a.5.5 0 0 1 .5-.5zm5 0a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0v-8a.5.5 0 0 1 .5-.5z"></path>
+    </svg>
+  </button>
+
+  <!-- Speaker -->
+  <button id="volumeToggleBtn" title="Toggle Volume">
+    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="white" viewBox="0 0 16 16">
+      <path d="M11.536 14.01a.5.5 0 0 1-.354-.854A6.978 6.978 0 0 0 13 8a6.978 6.978 0 0 0-1.818-4.656.5.5 0 1 1 .707-.707A7.978 7.978 0 0 1 14 8a7.978 7.978 0 0 1-2.121 5.363.5.5 0 0 1-.343.146z"></path>
+      <path d="M11.072 11.768a.5.5 0 0 1-.343-.146A3.978 3.978 0 0 0 12 8a3.978 3.978 0 0 0-1.271-2.882.5.5 0 1 1 .707-.707A4.978 4.978 0 0 1 13 8a4.978 4.978 0 0 1-1.464 3.536.5.5 0 0 1-.464.232z"></path>
+      <path d="M8.017 3.01A.5.5 0 0 1 8.5 3.5v9a.5.5 0 0 1-.796.405L5.825 10.48H4a.5.5 0 0 1-.5-.5V6.02a.5.5 0 0 1 .5-.5h1.825l1.88-2.425a.5.5 0 0 1 .812-.085z"></path>
+    </svg>
+  </button>
+
+  <!-- Spectrum -->
+  <canvas id="audioSpectrum" width="80" height="30"></canvas>
+
+  <!-- Volume Range -->
+  <input type="range" id="volumeControl" min="0" max="1" step="0.01" value="0.5" style="width:80px; display:none;">
+</div>
+
+<audio id="radioAudio" src="https://stream-146.zeno.fm/hfbgmx6rwrhvv?zs=hSPzGT5PR0ufE-WMSrcVLg" crossorigin="anonymous"></audio>
+
+
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbarSupportedContent" data-bs-target="#navbarSupportedContent" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+				<div class="hamburger">
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true">
+					<li class="nav-item">
+						<a class="nav-link link text-black display-4" href="https://mobiri.se">About</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link link text-black display-4" href="https://mobiri.se" aria-expanded="false">Services</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link link text-black display-4" href="https://mobiri.se">Contacts</a>
+					</li>
+				</ul>
+				<div class="icons-menu">
+					<a class="iconfont-wrapper" href="https://mobiri.se">
+						<span class="p-2 mbr-iconfont mobi-mbri-phone mobi-mbri"></span>
+					</a>
+					<a class="iconfont-wrapper" href="https://mobiri.se">
+						<span class="p-2 mbr-iconfont mobi-mbri-letter mobi-mbri"></span>
+					</a>
+					<a class="iconfont-wrapper" href="https://mobiri.se">
+						<span class="p-2 mbr-iconfont mobi-mbri-map-pin mobi-mbri"></span>
+					</a>
+					
+				</div>
+				
+			</div>
+		</div>
+	</nav>
+
+  <script>
+  const audio = document.getElementById("radioAudio");
+  const playPauseBtn = document.getElementById("playPauseBtn");
+  const playIcon = document.getElementById("playIcon");
+  const pauseIcon = document.getElementById("pauseIcon");
+  const volumeControl = document.getElementById("volumeControl");
+  const volumeToggleBtn = document.getElementById("volumeToggleBtn");
+  const canvas = document.getElementById("audioSpectrum");
+  const canvasCtx = canvas.getContext("2d");
+
+  // Setup Audio Context
+  const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+  const analyser = audioCtx.createAnalyser();
+  const source = audioCtx.createMediaElementSource(audio);
+  source.connect(analyser);
+  analyser.connect(audioCtx.destination);
+  analyser.fftSize = 64;
+  const bufferLength = analyser.frequencyBinCount;
+  const dataArray = new Uint8Array(bufferLength);
+
+  // Draw the audio spectrum
+  function draw() {
+    requestAnimationFrame(draw);
+    analyser.getByteFrequencyData(dataArray);
+    canvasCtx.clearRect(0, 0, canvas.width, canvas.height);
+    const barWidth = (canvas.width / bufferLength) * 2.5;
+    let x = 0;
+    for (let i = 0; i < bufferLength; i++) {
+      const value = dataArray[i] / 255;
+      const barHeight = value * canvas.height * 0.8;
+      const gradient = canvasCtx.createLinearGradient(0, canvas.height, 0, canvas.height - barHeight);
+      gradient.addColorStop(0, '#f0b74d');
+      gradient.addColorStop(1, '#c9462e');
+      canvasCtx.fillStyle = gradient;
+      canvasCtx.fillRect(x, canvas.height - barHeight, barWidth, barHeight);
+      x += barWidth + 1;
+    }
+  }
+
+  draw();
+
+  // Load saved volume
+  const savedVolume = localStorage.getItem("radioVolume");
+  if (savedVolume !== null) {
+    audio.volume = savedVolume;
+    volumeControl.value = savedVolume;
+  }
+
+  // Volume slider change
+  volumeControl.addEventListener("input", () => {
+    audio.volume = volumeControl.value;
+    localStorage.setItem("radioVolume", volumeControl.value);
+  });
+
+  // Volume toggle button
+  volumeToggleBtn.addEventListener("click", () => {
+    volumeControl.style.display = (volumeControl.style.display === "none" || volumeControl.style.display === "") 
+      ? "inline-block" 
+      : "none";
+  });
+
+  // Play/Pause toggle
+  let isPlaying = false;
+
+  playPauseBtn.addEventListener("click", () => {
+    if (!isPlaying) {
+      if (audioCtx.state === "suspended") {
+        audioCtx.resume();
+      }
+      audio.play().then(() => {
+        isPlaying = true;
+        playIcon.style.display = "none";
+        pauseIcon.style.display = "block";
+      }).catch(err => {
+        console.error("Play error:", err);
+      });
+    } else {
+      audio.pause();
+      isPlaying = false;
+      playIcon.style.display = "block";
+      pauseIcon.style.display = "none";
+    }
+  });
+
+  // Auto-reconnect on error
+  audio.addEventListener("error", () => {
+    console.warn("Stream error. Retrying in 5s...");
+    setTimeout(() => {
+      audio.load();
+      audio.play().catch(() => {});
+    }, 5000);
+  });
+</script>
+
+</section>
+
+<section class="mbr-section mbr-section--no-padding cid-uIQJEdGgcG" id="witsec-html-block-5">
+
+
+
+
+
+<!-- Place your own code below -->
+
+<!-- Font Awesome & Google Fonts -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
+<!-- Carousel Container -->
+<div id="rss-carousel-container" style="max-width: 1200px; margin: 60px auto; font-family: 'Inter', sans-serif; position: relative; overflow: hidden;">
+  <div id="carousel-track" style="display: flex; transition: transform 0.6s ease-in-out;"></div>
+  <button id="prevBtn" class="nav-btn">❮</button>
+  <button id="nextBtn" class="nav-btn">❯</button>
+  <div id="carousel-indicators" style="text-align:center; margin-top: 20px;"></div>
+</div>
+
+<!-- Modal -->
+<div id="rss-modal" class="light-mode">
+  <div id="rss-modal-content">
+    <span id="rss-modal-close">×</span>
+    <button id="toggle-theme" title="Toggle light/dark mode"><i class="fas fa-moon"></i></button>
+    <div id="rss-modal-body"></div>
+    <div id="rss-share">
+      <strong>Share this post:</strong>
+      <a id="share-fb" href="#" target="_blank" title="Share on Facebook"><i class="fab fa-facebook-square share-icon"></i></a>
+      <a id="share-tw" href="#" target="_blank" title="Share on Twitter"><i class="fab fa-twitter share-icon"></i></a>
+      <a id="share-wa" href="#" target="_blank" title="Share on WhatsApp"><i class="fab fa-whatsapp share-icon"></i></a>
+      <a href="#" id="copy-link" title="Copy link"><i class="fas fa-link share-icon"></i></a>
+    </div>
+  </div>
+</div>
+
+<style>
+  :root {
+    --modal-bg: #fff;
+    --text-color: #222;
+    --accent: #1a73e8;
+    --icon-bg: rgba(0,0,0,0.5);
+  }
+
+  .dark-mode {
+    --modal-bg: #1f1f1f;
+    --text-color: #eee;
+    --accent: #90cdf4;
+    --icon-bg: rgba(255,255,255,0.2);
+  }
+
+  * { box-sizing: border-box; }
+  .slide {
+    flex: 1 0 33.33%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .card {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    max-width: 360px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+  }
+
+  .card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .card-body {
+    padding: 18px;
+  }
+
+  .card-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: var(--accent);
+  }
+
+  .card-summary {
+    font-size: 15px;
+    color: #444;
+  }
+
+  .nav-btn {
+    position: absolute;
+    top: 50%;
+    background: var(--icon-bg);
+    color: white;
+    border: none;
+    padding: 12px 15px;
+    cursor: pointer;
+    font-size: 20px;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    z-index: 10;
+  }
+
+  #prevBtn { left: 10px; }
+  #nextBtn { right: 10px; }
+
+  #carousel-indicators {
+    margin-top: 10px;
+  }
+
+  .indicator-dot {
+    height: 10px;
+    width: 10px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.3s;
+    cursor: pointer;
+  }
+
+  .indicator-dot.active {
+    background-color: var(--accent);
+  }
+
+  #rss-modal {
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.7);
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+  }
+
+  #rss-modal-content {
+    background: var(--modal-bg);
+    color: var(--text-color);
+    padding: 25px;
+    max-width: 850px;
+    max-height: 90vh;
+    overflow-y: auto;
+    border-radius: 12px;
+    position: relative;
+    animation: fadeIn 0.4s ease;
+  }
+
+  #rss-modal-close {
+    position: absolute;
+    top: 12px; right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  #toggle-theme {
+    position: relative;
+    display: block;
+    margin: 0 auto 15px auto;
+    background: var(--modal-bg);
+    border: 2px solid var(--accent);
+    color: var(--text-color);
+    border-radius: 30px;
+    font-size: 18px;
+    padding: 6px 12px;
+    cursor: pointer;
+    transition: background 0.3s;
+    z-index: 2;
+  }
+
+  #toggle-theme:hover {
+    background: var(--accent);
+    color: #fff;
+  }
+
+  #rss-share {
+    margin-top: 20px;
+    font-size: 18px;
+  }
+
+  .share-icon {
+    font-size: 26px;
+    margin: 0 10px;
+    transition: transform 0.3s;
+  }
+
+  .share-icon:hover {
+    transform: scale(1.2);
+  }
+
+  .card-share-icon {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    font-size: 20px;
+    color: var(--accent);
+    background: var(--modal-bg);
+    border-radius: 50%;
+    padding: 8px;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    z-index: 5;
+  }
+
+  .share-menu {
+    position: absolute;
+    top: 50px;
+    right: 12px;
+    background: var(--modal-bg);
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+    padding: 10px;
+    display: none;
+    flex-direction: row;
+    gap: 10px;
+    z-index: 6;
+  }
+
+  .share-menu.show {
+    display: flex;
+  }
+
+  @media screen and (max-width: 767px) {
+    .slide { flex: 1 0 100%; }
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+  }
+</style>
+
+<script>
+(function () {
+  const feedUrl = 'https://blog.dananini.com/feeds/posts/default/';
+  const proxyUrl = 'https://api.rss2json.com/v1/api.json?rss_url=' + encodeURIComponent(feedUrl);
+  const track = document.getElementById('carousel-track');
+  const modal = document.getElementById('rss-modal');
+  const modalBody = document.getElementById('rss-modal-body');
+  const modalClose = document.getElementById('rss-modal-close');
+  const toggleTheme = document.getElementById('toggle-theme');
+  const prevBtn = document.getElementById('prevBtn');
+  const nextBtn = document.getElementById('nextBtn');
+  const indicators = document.getElementById('carousel-indicators');
+  const shareFb = document.getElementById('share-fb');
+  const shareTw = document.getElementById('share-tw');
+  const shareWa = document.getElementById('share-wa');
+  const copyLink = document.getElementById('copy-link');
+
+  let currentIndex = 0;
+  let itemsCount = 0;
+  let autoSlideInterval;
+  let items = [];
+
+  function truncate(html, limit) {
+    const tmp = document.createElement('div');
+    tmp.innerHTML = html;
+    return tmp.textContent.split(' ').slice(0, limit).join(' ') + '...';
+  }
+
+  function createSlide(item, index) {
+    const slide = document.createElement('div');
+    slide.className = 'slide';
+
+    const card = document.createElement('div');
+    card.className = 'card';
+
+    const tempDiv = document.createElement('div');
+    tempDiv.innerHTML = item.content || item.description;
+    const img = tempDiv.querySelector('img');
+
+    if (img) {
+      const image = document.createElement('img');
+      image.src = img.src;
+      card.appendChild(image);
+    }
+
+    const shareIcon = document.createElement('div');
+    shareIcon.innerHTML = '<i class="fas fa-share-alt"></i>';
+    shareIcon.className = 'card-share-icon';
+    card.appendChild(shareIcon);
+
+    const shareMenu = document.createElement('div');
+    shareMenu.className = 'share-menu';
+    shareMenu.innerHTML = `
+      <a href="https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(item.link)}" target="_blank" title="Share on Facebook"><i class="fab fa-facebook-square share-icon"></i></a>
+      <a href="https://twitter.com/intent/tweet?url=${encodeURIComponent(item.link)}&text=${encodeURIComponent(item.title)}" target="_blank" title="Share on Twitter"><i class="fab fa-twitter share-icon"></i></a>
+      <a href="https://wa.me/?text=${encodeURIComponent(item.title + ' ' + item.link)}" target="_blank" title="Share on WhatsApp"><i class="fab fa-whatsapp share-icon"></i></a>
+      <a href="#" class="copy-link" title="Copy link"><i class="fas fa-link share-icon"></i></a>
+    `;
+    card.appendChild(shareMenu);
+
+    shareIcon.addEventListener('click', (e) => {
+      e.stopPropagation();
+      document.querySelectorAll('.share-menu').forEach(m => m.classList.remove('show'));
+      shareMenu.classList.toggle('show');
+    });
+
+    shareMenu.querySelector('.copy-link').addEventListener('click', (e) => {
+      e.preventDefault();
+      navigator.clipboard.writeText(item.link).then(() => alert("🔗 Link copied!"));
+    });
+
+    const body = document.createElement('div');
+    body.className = 'card-body';
+
+    const title = document.createElement('div');
+    title.className = 'card-title';
+    title.textContent = item.title;
+
+    const summary = document.createElement('p');
+    summary.className = 'card-summary';
+    summary.textContent = truncate(item.description, 25);
+
+    body.appendChild(title);
+    body.appendChild(summary);
+    card.appendChild(body);
+
+    card.addEventListener('click', () => openModal(item));
+    slide.appendChild(card);
+    return slide;
+  }
+
+  function openModal(item) {
+    modal.style.display = 'flex';
+    modalBody.innerHTML = `<h2>${item.title}</h2><p style="color:gray;"><em>${new Date(item.pubDate).toLocaleString()}</em></p>${item.content}`;
+    shareFb.href = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(item.link)}`;
+    shareTw.href = `https://twitter.com/intent/tweet?url=${encodeURIComponent(item.link)}&text=${encodeURIComponent(item.title)}`;
+    shareWa.href = `https://wa.me/?text=${encodeURIComponent(item.title + ' ' + item.link)}`;
+    copyLink.onclick = (e) => {
+      e.preventDefault();
+      navigator.clipboard.writeText(item.link).then(() => alert("🔗 Link copied!"));
+    };
+  }
+
+  modalClose.onclick = () => modal.style.display = 'none';
+  window.onclick = e => { if (e.target === modal) modal.style.display = 'none'; };
+  toggleTheme.onclick = () => {
+    modal.classList.toggle('dark-mode');
+    modal.classList.toggle('light-mode');
+    toggleTheme.innerHTML = modal.classList.contains('dark-mode') ? '<i class="fas fa-sun"></i>' : '<i class="fas fa-moon"></i>';
+  };
+
+  function updateCarousel() {
+    const width = track.children[0].offsetWidth;
+    track.style.transform = `translateX(-${width * currentIndex}px)`;
+    updateIndicators();
+  }
+
+  function updateIndicators() {
+    indicators.querySelectorAll('.indicator-dot').forEach((dot, i) => {
+      dot.classList.toggle('active', i === currentIndex);
+    });
+  }
+
+  function startAutoSlide() {
+    autoSlideInterval = setInterval(() => {
+      currentIndex = (currentIndex + 1) % itemsCount;
+      updateCarousel();
+    }, 6000);
+  }
+
+  function createIndicators() {
+    indicators.innerHTML = '';
+    for (let i = 0; i < itemsCount; i++) {
+      const dot = document.createElement('span');
+      dot.className = 'indicator-dot';
+      dot.addEventListener('click', () => {
+        currentIndex = i;
+        updateCarousel();
+      });
+      indicators.appendChild(dot);
+    }
+  }
+
+  fetch(proxyUrl)
+    .then(res => res.json())
+    .then(data => {
+      items = data.items.slice(-10);
+      itemsCount = items.length;
+      items.forEach((item, i) => track.appendChild(createSlide(item, i)));
+      createIndicators();
+      updateCarousel();
+      startAutoSlide();
+    });
+
+  prevBtn.onclick = () => {
+    currentIndex = (currentIndex - 1 + itemsCount) % itemsCount;
+    updateCarousel();
+  };
+  nextBtn.onclick = () => {
+    currentIndex = (currentIndex + 1) % itemsCount;
+    updateCarousel();
+  };
+
+  document.getElementById('rss-carousel-container').addEventListener('mouseenter', () => clearInterval(autoSlideInterval));
+  document.getElementById('rss-carousel-container').addEventListener('mouseleave', startAutoSlide);
+})();
+</script>
+
+
+<!-- Place your own code above -->
+
+</section><script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>  <script src="assets/smoothscroll/smooth-scroll.js"></script>  <script src="assets/ytplayer/index.js"></script>  <script src="assets/dropdown/js/navbar-dropdown.js"></script>  <script src="assets/theme/js/script.js"></script>  
+  
+  
+</body>
+</html>
